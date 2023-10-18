@@ -1,0 +1,10 @@
+<div class="container">
+    <h2 class="title">Kelvin to Fahrenheit:</h2>
+    <label for="kelvin">Enter temperature in Kelvin:</label>
+    <br>
+    <input type="number" [(ngModel)]="kelvin" (keyup.enter)="convert()" placeholder="Kelvin" class="input-field">
+    <br>
+    <button (click)="convert()" class="convert-button">Convert</button>
+    <br>
+    <p id="result5" class="result">{{result}}</p>
+</div>
