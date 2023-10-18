@@ -1,0 +1,10 @@
+<div class="container">
+    <h2 class="title">Celsius to Kelvin</h2>
+    <label for="celsius">Enter temperature in celsius:</label>
+    <br>
+    <input type="number" id="celsius2" [(ngModel)]="celcius" (keyup.enter)="convert()" placeholder="celsius" class="input-field">
+    <br>
+    <button onclick="convert()" class="convert-button">Convert</button>
+    <br>
+    <p id="result2" class="result">{{result}}</p>
+</div>

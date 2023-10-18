@@ -3,9 +3,9 @@
         <h2 class="title">Celsius to Fahrenheit Conversion</h2>
         <label for="celsius">Enter temperature in Celsius:</label>
         <br>
-        <input type="number" [(ngModel)]="celsius" placeholder="Celsius" class="input-field">
+        <input type="number" (keyup.enter)="convert()" [(ngModel)]="celsius" placeholder="Celsius" class="input-field">
         <br>
-        <button (click)="convert()" class="convert-button">Convert</button>
+        <button (click)="convert()"  class="convert-button">Convert</button>
         <br>
         <p id="result" class="result">{{result}}</p>
     </div><br>
